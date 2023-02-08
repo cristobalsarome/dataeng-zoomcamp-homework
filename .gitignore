@@ -1,2 +1,6 @@
 tmp_*
 *.ipynb_checkpoints
+.terraform
+*__pycache__*
+data/
+test.ipynb
