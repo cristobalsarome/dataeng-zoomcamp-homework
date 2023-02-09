@@ -1,13 +1,12 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'etl-web-to-gcs'
 ###
-name: hw2-q5-cristobal
+name: github-deployment
 description: Main ETL function
 version: 8d1e717c0f6e3a44de4670b04218fe0a
 # The work queue that will handle this deployment's runs
 work_queue_name: default
-tags:
-- notification
+tags: []
 parameters: {}
 schedule: null
 infra_overrides: {}
@@ -25,14 +24,22 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
-  _block_document_id: 80fd5719-3b8c-49e9-bc5d-d1fc23c4cbef
-  _block_document_name: anonymous-47a35574-ea36-4a84-9003-7967721eb98c
+  _block_document_id: 114afb9e-62c8-4628-9df0-65a44090054d
+  _block_document_name: anonymous-1f085e68-c884-4c76-8cdf-e5eec665d05d
   _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
-storage: null
-path: C:\Users\crist\OneDrive\Learning\Data-Engineering\dataeng-zoomcamp-homework\week-2
-entrypoint: etl_web_to_cgs.py:etl_web_to_gcs
+storage:
+  repository: https://github.com/cristobalsarome/dataeng-zoomcamp-homework/
+  reference: null
+  access_token: null
+  _block_document_id: 576f6631-08e8-4d25-932a-5caf7ca35ccb
+  _block_document_name: gitrepo1
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: week-2\etl_web_to_cgs.py:etl_web_to_gcs
 parameter_openapi_schema:
   title: Parameters
   type: object
