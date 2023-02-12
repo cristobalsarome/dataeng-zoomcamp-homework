@@ -3,4 +3,5 @@ tmp_*
 .terraform
 *__pycache__*
 data/
+week-2/week-2/
 test.ipynb
