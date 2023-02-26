@@ -28,9 +28,17 @@ You should find the views and models for querying in your DWH.
 
 - 41648442
 - 51648442
-- 61648442
+- ✅**61648442 (closest match)**
 - 71648442
 
+<b>CODE:</b></br>
+```sql
+SELECT COUNT(*)
+FROM `dataeng-zoomcamp-376312.dbt_csarome.fact_trips` 
+WHERE EXTRACT(YEAR FROM pickup_datetime) IN (2019,2020)
+--Result:
+--61539696
+```
 
 ### Question 2: 
 
@@ -38,12 +46,13 @@ You should find the views and models for querying in your DWH.
 
 You will need to complete "Visualising the data" videos, either using [google data studio](https://www.youtube.com/watch?v=39nLTs74A3E) or [metabase](https://www.youtube.com/watch?v=BnLkrA7a6gM). 
 
-- 89.9/10.1
+- ✅**89.9/10.1**
 - 94/6
 - 76.3/23.7
 - 99.1/0.9
 
 
+![Visualization](./images/q2-visualization.png)
 
 ### Question 3: 
 
@@ -56,6 +65,7 @@ Filter records with pickup time in year 2019.
 - 43244696
 - 53244696
 - 63244696
+
 
 
 ### Question 4: 
@@ -92,6 +102,5 @@ Create a dashboard with some tiles that you find interesting to explore the data
 Deadline: 25 February (Saturday), 22:00 CET
 
 
-## Solution
 
-We will publish the solution here
+[def]: ./images/q2_visualization.png
