@@ -7,14 +7,14 @@ sources:
       #database: taxi-rides-ny-339813
 
       # For postgres:
-      database: production
+      # database: production
 
-      schema: trips_data_all
+      schema: nyc_taxi
 
       # loaded_at_field: record_loaded_at
       tables:
-        - name: green_tripdata
-        - name: yellow_tripdata
+        - name: green
+        - name: yellow
          # freshness:
            # error_after: {count: 6, period: hour}
 
