@@ -62,11 +62,18 @@ Create a staging model for the fhv data for 2019 and do not add a deduplication 
 Filter records with pickup time in year 2019.
 
 - 33244696
-- 43244696
+- ✅**43244696**
 - 53244696
 - 63244696
 
-
+<b>CODE:</b></br>
+```sql
+SELECT COUNT(*)
+FROM `dataeng-zoomcamp-376312.dbt_csarome.stg_fhv_tripdata`
+WHERE EXTRACT(YEAR FROM pickup_datetime) =2019
+--Result:
+--43244696
+```
 
 ### Question 4: 
 
@@ -77,9 +84,17 @@ Similar to what we've done in fact_trips, keep only records with known pickup an
 Run it via the CLI without limits (is_test_run: false) and filter records with pickup time in year 2019.
 
 - 12998722
-- 22998722
+- ✅**22998722**
 - 32998722
 - 42998722
+
+<b>CODE:</b></br>
+```sql
+SELECT COUNT(*)
+FROM `dataeng-zoomcamp-376312.dbt_csarome.fact_fhv_trips`
+WHERE EXTRACT(YEAR FROM pickup_datetime) =2019
+--Result:23936461
+```
 
 ### Question 5: 
 
@@ -89,10 +104,10 @@ Create a dashboard with some tiles that you find interesting to explore the data
 
 - March
 - April
-- January
+- ✅**January**
 - December
 
-
+![Visualization](./images/q5-fhv-trips-per-month.png)
 
 ## Submitting the solutions
 
