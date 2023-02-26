@@ -108,14 +108,3 @@ Create a dashboard with some tiles that you find interesting to explore the data
 - December
 
 ![Visualization](./images/q5-fhv-trips-per-month.png)
-
-## Submitting the solutions
-
-* Form for submitting: https://forms.gle/6A94GPutZJTuT5Y16
-* You can submit your homework multiple times. In this case, only the last submission will be used. 
-
-Deadline: 25 February (Saturday), 22:00 CET
-
-
-
-[def]: ./images/q2_visualization.png
