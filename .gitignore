@@ -5,3 +5,5 @@ tmp_*
 data/
 week-2/week-2/
 test.ipynb
+environment_variables.txt
+*.csv.gz
